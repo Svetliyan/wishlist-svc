@@ -8,4 +8,6 @@ import java.util.UUID;
 
 public interface WishlistRepository extends JpaRepository<WishlistItem, UUID> {
     List<WishlistItem> findByUserId(UUID userId);
+
+    Optional<WishlistItem> findByUserIdAndGameId(UUID userId, UUID gameId);
 }
