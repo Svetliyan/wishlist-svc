@@ -21,4 +21,7 @@ public class WishlistItem {
     private UUID userId;
     private UUID gameId;
     private String mainImgUrl;
+
+    public WishlistItem(UUID userId, UUID gameId) {
+    }
 }
